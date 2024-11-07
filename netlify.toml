@@ -1,0 +1,9 @@
+[build]
+  publish = "build/web"
+  command = "bash ./build.sh"
+
+[[plugins]]
+  package = "netlify-plugin-flutter"
+
+[context.production.environment]
+  FLUTTER_VERSION = "stable"
